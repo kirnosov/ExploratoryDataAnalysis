@@ -27,7 +27,7 @@ data <- read.table(fileName, header=TRUE, sep=";", stringsAsFactors=FALSE, dec="
 png("plot3.png", width=480, height=480)
 with(data, {
         plot(Sub_metering_1~DateTime, type="l",
-             ylab="Global Active Power (kilowatts)", xlab="")
+             ylab="Energy sub metering", xlab="")
         lines(Sub_metering_2~DateTime,col='Red')
         lines(Sub_metering_3~DateTime,col='Blue')
 })
